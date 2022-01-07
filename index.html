@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8ef88cf4a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Shopping Cart - Home</title>
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="#">MyShopp</a>
+            </div>
+            <div class="navigation">
+                <a href="#"><span class="cart">Cart<i class="fas fa-shopping-cart"></i></span><span
+                        class="badge">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <hr />
+
+    <main>
+        <aside id="sidebar">
+            <div class="category category1" onclick="changeCategory(event, 'cat1')">Category 1</div>
+            <div class="category category2" onclick="changeCategory(event, 'cat2')">Category 2</div>
+            <div class="category category3" onclick="changeCategory(event, 'cat3')">Category 3</div>
+        </aside>
+
+        <div id="cat1" class="products-display ">
+
+        </div>
+        <div id="cat2" class="products-display ">
+
+        </div>
+        <div id="cat3" class="products-display ">
+
+        </div>
+
+    </main>
+
+    <div class="products-in-cart">
+        <div class="cartInfo">
+            <h2 style="text-align: center;">Cart</h2>
+            <hr>
+        </div>
+        <div class="rendered-cart">
+
+            <h3 style="text-align: center; margin-top: 30%;">Hi, your cart is empty.</h3>
+
+        </div>
+        <!-- <div class="pincart">
+            <img src="images/laptop.jpg" alt="laptop" width="100px" />
+            <div>
+                <h3>Laptop</h3>
+                <h4>
+                    Quantity : <button class="btn-decrease" onclick="decreaseProduct(this)">-</button><span
+                        class="qty">1</span><button class="btn-increase" onclick="increaseProduct(this)">+</button>
+                </h4>
+            </div>
+            <button class="btn-remove" onclick="removeProduct(this)">Remove</button>
+        </div> -->
+        <div class="cart-footer">
+            <hr>
+            <h2>Thank you for shopping !</h2>
+
+        </div>
+    </div>
+
+
+
+    <script src="data.js"></script>
+</body>
+
+</html>
