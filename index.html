@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8ef88cf4a7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css" />
+
+
     <title>Shopping Cart - Home</title>
-    <script src="index.js" defer></script>
+
+    <link type="text/css" rel="stylesheet" href="./Styles/index.css" />
+
+    <script src="./index.js" defer></script>
 </head>
 
 <body>
@@ -31,18 +36,21 @@
 
     <main>
         <aside id="sidebar">
-            <div class="category category1" onclick="changeCategory(event, 'cat1')">Category 1</div>
-            <div class="category category2" onclick="changeCategory(event, 'cat2')">Category 2</div>
-            <div class="category category3" onclick="changeCategory(event, 'cat3')">Category 3</div>
+            <div class="category category1" onclick="changeCategory(event, 'cat1')">Laptops</div>
+            <div class="category category2" onclick="changeCategory(event, 'cat2')">Mobiles</div>
+            <div class="category category3" onclick="changeCategory(event, 'cat3')">cameras</div>
         </aside>
 
         <div id="cat1" class="products-display ">
+            <!-- <h2>Laptop category products</h2> -->
 
         </div>
         <div id="cat2" class="products-display ">
+            <!-- <h2>Mobile category products</h2> -->
 
         </div>
         <div id="cat3" class="products-display ">
+            <!-- <h2>Camera category products</h2> -->
 
         </div>
 
@@ -50,7 +58,7 @@
 
     <div class="products-in-cart">
         <div class="cartInfo">
-            <h2 style="text-align: center;">Cart</h2>
+            <h2>Cart</h2>
             <hr>
         </div>
         <div class="rendered-cart">
@@ -58,25 +66,24 @@
             <h3 style="text-align: center; margin-top: 30%;">Hi, your cart is empty.</h3>
 
         </div>
-        <!-- <div class="pincart">
-            <img src="images/laptop.jpg" alt="laptop" width="100px" />
-            <div>
-                <h3>Laptop</h3>
-                <h4>
-                    Quantity : <button class="btn-decrease" onclick="decreaseProduct(this)">-</button><span
-                        class="qty">1</span><button class="btn-increase" onclick="increaseProduct(this)">+</button>
-                </h4>
-            </div>
-            <button class="btn-remove" onclick="removeProduct(this)">Remove</button>
-        </div> -->
-        <div class="cart-footer">
-            <hr>
-            <h2>Thank you for shopping !</h2>
 
-        </div>
+        <button class="checkout">checkout</button>
     </div>
 
 
+    <footer>
+        <div class="foo-links">
+            <a href="/index.html">MyShopp</a>
+            <!-- <a href="#">About Us</a> -->
+            <a href="/checkout.html">Cart</a>
+            <a href="#">Terms & policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div>
+            <span>copyright <span>&copy;</span> <strong>RupeshG</strong> | designed by Rupesh
+                Gudmalwar</span>
+        </div>
+    </footer>
 
 </body>
 

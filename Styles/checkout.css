@@ -1,0 +1,52 @@
+form {
+  border: 1px solid #ccc;
+  width: 60vw;
+  max-width: 30em;
+  margin: auto;
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 1rem;
+  z-index: 1;
+  padding: 1em;
+  display: none;
+}
+
+hr {
+  margin-bottom: 0.5em;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #ccc;
+}
+
+/* Set a style for all buttons */
+.loginbtn,
+.signupbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.loginbtn {
+  background-color: rgb(79, 160, 241);
+}
+
+article p {
+  font-size: 5rem;
+  margin: auto;
+  padding: 15%;
+}

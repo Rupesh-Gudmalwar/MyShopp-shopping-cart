@@ -3,6 +3,7 @@ const category = document.querySelectorAll(".category");
 const productsDisplay = document.querySelectorAll(".products-display");
 const badge = document.querySelector(".badge");
 const cartInfo = document.querySelector(".cartInfo h2");
+const checkout = document.querySelector(".checkout");
 
 ////////// Products data //////////
 
@@ -301,6 +302,7 @@ data.map((product) => {
 ////////// Change category //////////
 
 function changeCategory(event, catType) {
+  event.preventDefault();
   productsDisplay.forEach((prds) => {
     prds.style.display = "none";
   });
@@ -320,7 +322,6 @@ updateCart();
 
 function addToCart(id) {
   // event.preventDefault();
-  console.log(dynamicCart);
 
   if (dynamicCart.some((itm) => itm.id === id)) {
     changeQuantity("plus", id);
@@ -342,6 +343,7 @@ function updateCart() {
 }
 
 ////////// Render to cart functionality //////////
+
 function renderCart() {
   productsInCart.innerHTML = "";
 
@@ -391,8 +393,7 @@ function subTotal() {
     cartPrice += itm.quantityInCart * itm.price;
   });
   badge.innerHTML = badgeUpdate;
-  cartInfo.innerHTML = `<h2 style="text-align: center;">Cart : (₹  ${cartPrice})</h2>
-  <hr>`;
+  cartInfo.innerHTML = `<h2>Cart : (₹ ${cartPrice})</h2>`;
 }
 
 /////////////// show cart on click ///////////////
@@ -434,4 +435,10 @@ function changeQuantity(change, id) {
   });
 
   updateCart();
+}
+
+checkout.addEventListener("click", checkoutFunction);
+function checkoutFunction() {
+  console.log("checkout");
+  location.href = "./checkout.html";
 }
